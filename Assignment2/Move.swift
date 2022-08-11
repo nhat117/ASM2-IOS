@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+enum PlayerType {
+    case human, bot
+}
+
+struct TicTacToeMove {
+    let playerName: String
+    let playerType: PlayerType
+    let moveLocation: Int
+    
+    var chessImage : String {
+        return playerType == .human ? "xmark" : "circle"
+    }
+}
