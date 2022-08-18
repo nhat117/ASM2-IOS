@@ -9,8 +9,18 @@ import SwiftUI
 
 struct LeaderBoardCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+       
+            ZStack {
+                Color(red: 0.91, green: 0.91, blue: 0.91).cornerRadius(10)
+                HStack {
+                    Image(systemName: "applelogo").resizable().scaledToFit()
+                    Spacer()
+                    Text("Billie").font(.title).fontWeight(.medium)
+                    Spacer()
+                    Text("40").font(.title).fontWeight(.medium)
+                }.padding()
+            }.frame(maxHeight: 20).padding()
+        }
 }
 
 struct LeaderBoardCell_Previews: PreviewProvider {

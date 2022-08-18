@@ -9,7 +9,13 @@ import SwiftUI
 
 struct StartMenu: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            //TODO: Make start menu
+            Text("Hello")
+        
+            Text("Yo")
+        }
+
     }
 }
 

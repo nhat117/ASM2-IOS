@@ -9,7 +9,17 @@ import SwiftUI
 
 struct ScoreView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                Text("Your Score").font(.title)
+                Text("12").font(.title)
+            }
+            Spacer()
+            VStack {
+                Text("Bot Score").font(.title)
+                Text("12").font(.title)
+            }
+        }.padding()
     }
 }
 
