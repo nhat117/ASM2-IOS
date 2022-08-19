@@ -21,7 +21,6 @@ struct LeaderBoardView: View {
                         LeaderBoardCell()
                         LeaderBoardCell()
                         LeaderBoardCell()
-
                     }
                 }
             }
