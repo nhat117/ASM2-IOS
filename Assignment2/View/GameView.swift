@@ -9,12 +9,19 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject private var gameEngine : GameEngine = GameEngine()
-
+    
     var body: some View {
         GeometryReader { screenSize in
             VStack {
                 //TODO: Reserve for logo
-                Text("TicTacToe").font(.title).fontWeight(Font.Weight.bold).padding()
+                HStack {
+                    Image(systemName: "arrow.left").font(.system(size: 35)).padding()
+                    Spacer()
+                    Image("InAppLogo").resizable().scaledToFit().frame(height: screenSize.size.height/12)
+                    Spacer()
+                    Image(systemName: "book").font(.system(size: 35)).padding()
+                }
+                
                 ScoreView()
                 Spacer()
                 //MARK: Main game View
@@ -46,8 +53,6 @@ struct GameView: View {
                 }
         }
     }
-    
-    
 }
 
 struct GameView_Previews: PreviewProvider {
